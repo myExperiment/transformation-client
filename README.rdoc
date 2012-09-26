@@ -2,13 +2,13 @@
 
 == Usage ==
 Require the gem
-  require 'transformation-client'
+  require 'wf4ever/transformation-client'
 
 To create a job:
   uri = Wf4Ever::TransformationClient.create_job(service-uri, resource-uri, format-uri, ro-uri, oauth-token)
 
 To check the status of a job
-  status = Wf4Ever::TransformationClient.check_job(uri)
+  status = Wf4Ever::TransformationClient.check_job(uri)["status"]
 
 To cancel a job
   Wf4Ever::TransformationClient.cancel_job(uri)
