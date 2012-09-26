@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "wf4ever-transformation-client"
-  s.version = "0.2.1"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Finn Bacall"]
@@ -23,10 +23,9 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/transformation-client.rb",
+    "lib/wf4ever/transformation-client.rb",
     "test/helper.rb",
     "test/test_transformation-client.rb",
-    "transformation-client.gemspec",
     "wf4ever-transformation-client.gemspec"
   ]
   s.homepage = "http://github.com/fbacall/transformation-client"
