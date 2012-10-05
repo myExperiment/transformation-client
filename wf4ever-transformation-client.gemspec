@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "wf4ever-transformation-client"
-  s.version = "0.3.0"
+  s.version = "0.3.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Finn Bacall"]
-  s.date = "2012-09-26"
+  s.date = "2012-10-05"
   s.description = "Client to interact with Wf4ever's RO Transformation Service"
   s.email = "finn.bacall@cs.man.ac.uk"
   s.extra_rdoc_files = [
@@ -28,10 +28,10 @@ Gem::Specification.new do |s|
     "test/test_transformation-client.rb",
     "wf4ever-transformation-client.gemspec"
   ]
-  s.homepage = "http://github.com/fbacall/transformation-client"
+  s.homepage = "http://github.com/myGrid/transformation-client"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.24"
+  s.rubygems_version = "1.8.10"
   s.summary = "Client to interact with Wf4ever's RO Transformation Service"
 
   if s.respond_to? :specification_version then

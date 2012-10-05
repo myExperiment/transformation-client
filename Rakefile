@@ -15,7 +15,7 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "wf4ever-transformation-client"
-  gem.homepage = "http://github.com/fbacall/transformation-client"
+  gem.homepage = "http://github.com/myGrid/transformation-client"
   gem.license = "MIT"
   gem.summary = "Client to interact with Wf4ever's RO Transformation Service"
   gem.description = "Client to interact with Wf4ever's RO Transformation Service"
