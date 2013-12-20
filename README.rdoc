@@ -1,20 +1,35 @@
 = transformation-client
 
-== Usage ==
+== Usage
 Require the gem
   require 'wf4ever/transformation-client'
 
 To create a job:
-  uri = Wf4Ever::TransformationClient.create_job(service-uri, resource-uri, format-uri, ro-uri, oauth-token)
+  service = "http://example.com/wf-ro/jobs"
+  resource = "http://example.net/workflow.t2flow"
+  format = "application/vnd.taverna.t2flow+xml"
+  ro = "http://example.com/RODL/RO/myResearch/"
+  token = "e5e02dd4-9e29-43f0-890c-729d66c46a9b"
+
+  job_uri = Wf4Ever::TransformationClient.create_job(service, resource, format, ro, token)
+
+You can optionally provide a list of additional resources to extract to
+which folders in the RO.
+
+  extract = { :nested => "http://example.com/RODL/RO/myResearch/folder1" } 
+  job_uri = Wf4Ever::TransformationClient.create_job(service, resource, format, ro, token, extract)
 
 To check the status of a job
-  status = Wf4Ever::TransformationClient.check_job(uri)["status"]
+  status = Wf4Ever::TransformationClient.check_job(job_uri)["status"]
 
 To cancel a job
-  Wf4Ever::TransformationClient.cancel_job(uri)
+  Wf4Ever::TransformationClient.cancel_job(job_uri)
+
 
 == Copyright
 
-Copyright (c) 2012 Finn Bacall. See LICENSE.txt for
-further details.
+Copyright (c) 2012-2013 University of Manchester. 
+
+This software is freely available under the MIT License. See LICENSE.txt
+for further details.
 
