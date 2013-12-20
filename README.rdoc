@@ -1,7 +1,8 @@
 = transformation-client
 
 This is a Ruby client library for submitting jobs to the
-[Wf4Ever wf-ro transformation service](http://www.wf4ever-project.org/wiki/display/docs/Wf-RO+transformation+service+API).
+Wf4Ever wf-ro transformation service - for details, see 
+http://www.wf4ever-project.org/wiki/display/docs/Wf-RO+transformation+service+API
 
 == Usage
 Require the gem
