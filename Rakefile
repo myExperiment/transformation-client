@@ -15,12 +15,12 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "wf4ever-transformation-client"
-  gem.homepage = "http://github.com/myGrid/transformation-client"
+  gem.homepage = "http://github.com/myExperiment/transformation-client"
   gem.license = "MIT"
   gem.summary = "Client to interact with Wf4ever's RO Transformation Service"
   gem.description = "Client to interact with Wf4ever's RO Transformation Service"
-  gem.email = "finn.bacall@cs.man.ac.uk"
-  gem.authors = ["Finn Bacall"]
+  gem.email = "bugs@myexperiment.org"
+  gem.authors = ["Finn Bacall", "Stian Soiland-Reyes"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
